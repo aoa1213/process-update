@@ -27,6 +27,7 @@ flowchart LR
     H[_run_protocol] --> I[Run entanglement step for timesteps and reps]
     J[_create_bell_pair] --> K[Create Bell pairs along path]
     L[_get_star] --> M[Get star paths connecting nodes]
+    N[_count_node] --> O[]
     linkStyle default stroke:#ff0000,stroke-width:2px;
 ```
 
