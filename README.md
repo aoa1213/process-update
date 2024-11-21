@@ -18,7 +18,7 @@
 ><font size=4>_Here is a flowchart shwoing the aim for each '.py' file_ </font>
 ```mermaid
 flowchart LR
-    Start(Quantum reapter) --> catogory1[Managing graphs]
+    Start(Quantum network simulation) --> catogory1[Managing graphs]
     catogory1--> file1['graph.py', 'graph_manager.py']
 
     Start(Quantum reapter) --> catogory2[Design the Protocols]
