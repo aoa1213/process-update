@@ -21,10 +21,10 @@ flowchart LR
     Start(Quantum network simulation) --> catogory1[Managing graphs]
     catogory1--> file1['graph.py', 'graph_manager.py']
 
-    Start(Quantum reapter) --> catogory2[Design the Protocols]
+    Start(Quantum network simulation) --> catogory2[Design the Protocols]
     catogory2--> file2['protocols.py']
     
-    Start(Quantum reapter) --> catogory3[Simulate the network]
+    Start(Quantum network simulation) --> catogory3[Simulate the network]
     catogory3[Simulate the network] --> file3['Sim.py']
     linkStyle default stroke:#ff0000,stroke-width:2px;
 ```
