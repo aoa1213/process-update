@@ -1,6 +1,6 @@
 <!-- Docsify/zh-cn/_sidebar.md -->
 * [Back to homepage](/)
-* [Sim.py](/zh-cn/Sim) 
-* [graph.py](zh-cn/graph)
-* [graph_manager.py](zh-cn/graph_manager)
-* [protocols.py](zh-cn/protocols)
+* [Sim.py](code_understanding/Sim) 
+* [graph.py](code_understanding/graph)
+* [graph_manager.py](code_understanding/graph_manager)
+* [protocols.py](code_understanding/protocols)
