@@ -25,6 +25,25 @@ flowchart LR
     I[get_G_list] --> J[Loads all saved graphs]
     linkStyle default stroke:#ff0000,stroke-width:2px;
 ```
+```mermaid 
+flowchart LR
+    A[Load Topology Bench dataset\n(Class 0, 1, 2)]
+    B[For each topology:\nGenerate all 3-user groups]
+    C[For each user group:\nRun MP-C, MP-G, and SP]
+    D[For each protocol:\nSweep p from 0.2 to 1.0\n(50 steps)]
+
+    A --> B --> C --> D
+```
+
+```mermaid 
+flowchart LR
+    E[For each p value:\nRun 100 Monte Carlo trials]
+    F[Compute ER for each p\nAverage ER → SR]
+    G[Average SR over all groups\n→ Final SR per topology]
+    H[Use SRs for analysis:\nClustering, correlation]
+
+    E --> F --> G --> H
+```
 
 ```mermaid 
 flowchart LR
