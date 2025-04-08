@@ -27,20 +27,20 @@ flowchart LR
 ```
 ```mermaid 
 flowchart LR
-    A[Load Topology Bench dataset\n(Class 0, 1, 2)]
-    B[For each topology:\nGenerate all 3-user groups]
-    C[For each user group:\nRun MP-C, MP-G, and SP]
-    D[For each protocol:\nSweep p from 0.2 to 1.0\n(50 steps)]
+    A[Load Topology Bench dataset Class 0, 1, 2]
+    B[For each topology: Generate all 3-user groups]
+    C[For each user group: Run MP-C, MP-G, and SP]
+    D[For each protocol: Sweep p from 0.2 to 1.0, 50 steps]
 
     A --> B --> C --> D
 ```
 
 ```mermaid 
 flowchart LR
-    E[For each p value:\nRun 100 Monte Carlo trials]
-    F[Compute ER for each p\nAverage ER → SR]
-    G[Average SR over all groups\n→ Final SR per topology]
-    H[Use SRs for analysis:\nClustering, correlation]
+    E[For each p value: Run 100 Monte Carlo trials]
+    F[Compute ER for each p Average ER → SR]
+    G[Average SR over all groups→ Final SR per topology]
+    H[Use SRs for analysis:Clustering, correlation]
 
     E --> F --> G --> H
 ```
