@@ -28,7 +28,7 @@ flowchart LR
 
 ```mermaid 
 flowchart TD
-    A[Start with Topology Bench dataset<br/>(pre-classified into Class 0/1/2)]
+    A[Start with Topology Bench dataset<br/>,pre-classified into Class 0/1/2]
     B[For each topology:<br/>Generate all 3-user GHZ combinations]
     C[For each user group:<br/>Run MP-C, MP-G, and SP protocols]
     D[For each protocol:<br/>Sweep p from 0.2 to 1.0,50 steps]
