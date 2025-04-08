@@ -28,7 +28,7 @@ flowchart LR
 ```mermaid 
 flowchart LR
     A[Load Topology Bench dataset Class 0, 1, 2]
-    B[For each topology: Generate all 3-user groups]
+    B[For each topology: Generate all user groups, up to 100 groups]
     C[For each user group: Run MP-C, MP-G, and SP]
     D[For each protocol: Sweep p from 0.2 to 1.0, 50 steps]
 
