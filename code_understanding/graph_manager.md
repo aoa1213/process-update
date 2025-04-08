@@ -37,7 +37,13 @@ flowchart TD
     G[Average SR across all user groups<br/>→ Final SR per protocol per topology]
     H[Use SR results for later analysis<br/>(e.g., clustering, correlation)]
 
-    A --> B --> C --> D --> E --> F --> G --> H
+    A --> B 
+    B --> C 
+    C --> D 
+    D --> E 
+    E --> F 
+    F --> G 
+    G --> H
 ```
 
 ```python
