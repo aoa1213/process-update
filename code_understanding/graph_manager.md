@@ -37,12 +37,13 @@ flowchart LR
 
 ```mermaid 
 flowchart LR
+    D[For each protocol: Sweep p from 0.2 to 1.0, 50 steps]
     E[For each p value: Run 100 Monte Carlo trials]
     F[Compute ER for each p Average ER → SR]
     G[Average SR over all groups→ Final SR per topology]
     H[Use SRs for analysis:Clustering, correlation]
 
-    E --> F --> G --> H
+    D --> E --> F --> G --> H
 ```
 
 ```mermaid 
