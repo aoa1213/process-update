@@ -18,14 +18,19 @@
 ><font size=4>_Here is a flowchart shwoing the aim for each '.py' file_ </font>
 ```mermaid
 flowchart LR
-    Start(Quantum network simulation) --> catogory1[Managing graphs]
+    start3(Quantum network simulation) --> Start1(python files)
+    start3 --> Start2(jupyter notebook files)
+    Start1(python files) --> catogory1[Managing graphs]
     catogory1--> file1['graph.py', 'graph_manager.py']
 
-    Start(Quantum network simulation) --> catogory2[Design the Protocols]
+    Start1(python files) --> catogory2[Design the Protocols]
     catogory2--> file2['protocols.py']
     
-    Start(Quantum network simulation) --> catogory3[Simulate the network]
-    catogory3[Simulate the network] --> file3['Sim.py']
+    Start1(python files) --> catogory3[Simulate the network]
+    catogory3 --> file3['Sim.py']
+
+    Start2(jupyter notebook files) --> file4[ 'figures.ipynb']
+
     linkStyle default stroke:#ff0000,stroke-width:2px;
 ```
 

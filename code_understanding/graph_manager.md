@@ -26,6 +26,20 @@ flowchart LR
     linkStyle default stroke:#ff0000,stroke-width:2px;
 ```
 
+```mermaid 
+flowchart TD
+    A[Start with Topology Bench dataset<br/>(pre-classified into Class 0/1/2)]
+    B[For each topology:<br/>Generate all 3-user GHZ combinations]
+    C[For each user group:<br/>Run MP-C, MP-G, and SP protocols]
+    D[For each protocol:<br/>Sweep p from 0.2 to 1.0 (50 steps)]
+    E[For each p value:<br/>Run 100 Monte Carlo trials]
+    F[Compute ER for each p,<br/>then average ER to get SR]
+    G[Average SR across all user groups<br/>→ Final SR per protocol per topology]
+    H[Use SR results for later analysis<br/>(e.g., clustering, correlation)]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+```
+
 ```python
 import networkx as nx
 
